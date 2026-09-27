@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f1224, #1b1035);
+    font-family: 'Segoe UI', sans-serif;
+    color: #f2f3f7;
+}
+
+.calc {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(18px);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+.display{
+    text-align: right;
+    min-height: 96px;
+    padding:18px 14px 22px;
+}
+.expression{
+  font-size:1rem;
+  color:#9aa0b4;
+  min-height:20px;
+}
+.result{
+  font-size:2.4rem;
+  font-weight:600;
+  margin-top:4px;
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 10px;
+}
+button.btn{
+    border: none;
+    border-radius: 16px;
+    padding:16px 0;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: #f2f3f7;
+    cursor:pointer;
+    transition: transform 0.12s ease, background 0.2s ease;
+}
+button.btn:hover{
+    background: rgba(255, 255, 255, 0.12);
+}
+button.btn:active{
+    transform: scale(0.93);
+}
+.op{
+    color: #39e6c9;
+    background: rgba(57, 230, 201, 0.08);
+}
+.op:hover{
+    background: rgba(57, 230, 201, 0.16);
+}
+.func{
+    color: #ff9d4d;
+    background: rgba(255, 157, 77, 0.08);
+}
+.func:hover{
+    background: rgba(255, 157, 77, 0.16);
+}
+.equals{
+    background: linear-gradient(135deg, #39e6c9, #1fb8a0);
+    color: #08211d;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(57, 230, 201, 0.25);
+}
+.equals:hover{
+    box-shadow: 0 8px 30px rgba(57, 230, 201, 0.4);
+}
+.span2{
+    grid-column: span 2;
+}
