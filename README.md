@@ -26,3 +26,5 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript.
 ## Author
 
 Made as part of the CodeAlpha internship task.
+## Live Demo
+Try it here: https://rimla-577.github.io/-codeAlpha_calculator/
